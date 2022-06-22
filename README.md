@@ -1,2 +1,2 @@
-# xlsv_Exploration
+# xlsx_Exploration
 Explatory work on openpyxl library and functionalities
