@@ -28,6 +28,16 @@ global_overview_data = {
     'percent_pats_surfaced_of_all_received': 0.01,
     'num_pats_confirmed_eligible_by_coord': 1,
     'percent_confirmed_eligible_by_coord': 0.0004,
+    'num_pats_confirmed_eligible_by_pi': 1,
+    'percent_confirmed_eligible_by_pi': 0.0004,
+    'num_pat_contacted': 0,
+    'percent_pat_contacted': 0,
+    'num_pat_consented': 0,
+    'percent_pat_consented': 0,
+    'num_pat_screened': 0,
+    'percent_pat_screened': 0,
+    'num_pat_randomized':0,
+    'percent_pat_randomized': 0
 }
 
 # Check if file is present
@@ -55,6 +65,16 @@ if os.path.exists('finding_report_v2.xlsx'):
         global_overview_worksheet['D9'] = global_overview_data['percent_pats_surfaced_of_all_received']
         global_overview_worksheet['E9'] = global_overview_data['num_pats_confirmed_eligible_by_coord']
         global_overview_worksheet['F9'] = global_overview_data['percent_confirmed_eligible_by_coord']
+        global_overview_worksheet['G9'] = global_overview_data['num_pats_confirmed_eligible_by_pi']
+        global_overview_worksheet['H9'] = global_overview_data['percent_confirmed_eligible_by_pi']
+        global_overview_worksheet['I9'] = global_overview_data['num_pat_contacted']
+        global_overview_worksheet['J9'] = global_overview_data['percent_pat_contacted']
+        global_overview_worksheet['K9'] = global_overview_data['num_pat_consented']
+        global_overview_worksheet['L9'] = global_overview_data['percent_pat_consented']
+        global_overview_worksheet['M9'] = global_overview_data['num_pat_screened']
+        global_overview_worksheet['N9'] = global_overview_data['percent_pat_screened']
+        global_overview_worksheet['O9'] = global_overview_data['num_pat_randomized']
+        global_overview_worksheet['P9'] = global_overview_data['percent_pat_randomized']
 
     # Hide Percentage columns by default
     if "Global Overview" in workbook.sheetnames:
